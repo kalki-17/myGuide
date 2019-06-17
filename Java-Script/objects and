@@ -1,0 +1,145 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+var myobj={
+  "foo":"value",
+  "age":"20",
+  "address":{
+    "street":"road",
+    "state":"karnataka"
+  }
+  
+};
+//myobj
+//console.log(myobj);
+
+//here we are individually assigning values as many times as employees
+var emp1={};
+emp1.firstname="michael";
+emp1.lastname="burn";
+
+var emp3={};
+emp1.firstname="michael";
+emp1.lastname="burn";
+
+//to do away with above issue we use function
+
+function createemployee(firstname,lastname){
+var newObject={};
+newObject.firstname=firstname;
+newObject.lastname=lastname;
+  return newObject;
+};
+
+var emp3=createemployee("hello","tom");
+//console.log(emp3);
+
+function createemployee1(firstname,lastname){
+//var newObject={};
+this.firstname=firstname;
+this.lastname=lastname;
+ // return newObject;
+};
+
+var emp4=new createemployee1("hi","martha");
+//console.log(emp4);
+
+//examples:
+
+var bicycle={
+  
+};
+
+function createbicycle(speed,gear){
+var newObject={};
+newObject.speed=speed;
+newObject.gear=gear;
+  return newObject;
+};
+
+var bicycle1=createbicycle("20","4");
+//console.log(bicycle1);
+;
+
+//now in constructor mode
+
+function createbicycleconst(speed,gear){
+//var newObject={};
+this.speed=speed;
+this.gear=gear;
+  //return newObject;
+};
+
+var bicycle2=new createbicycleconst("25","5")
+//console.log(bicycle2);
+
+//now calling a regular function using new.
+
+var bicycle5= new createbicycle("20","4");
+//console.log(bicycle5);
+
+//now calling a constructor function without using new keyword.
+
+var bicycle6= createbicycleconst("20","4");
+//console.log(bicycle6);
+
+//ways to execute functions in javascript.
+
+function foo(){
+  console.log("hello");
+  
+};
+
+//method 1
+
+foo();
+
+//method 2
+
+var obj={
+  
+};
+
+obj.foo=function(){
+  console.log("second method");
+};
+
+obj.foo();
+
+//3rd method is constructor
+
+//4th way is based on execution context.
+//if there are two functions, one inside the other and the outer function is called
+//using constructor method then also the this reference of outer 
+//function will be different than this reference of inner function
+
+function Mechanic(name){
+  this.name=name;
+};
+
+var mike=new Mechanic("mike");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Exception: SyntaxError: expected expression, got end of script
+@Scratchpad/1:142
+*/

@@ -1,0 +1,6 @@
+C:\Users\shadashiv\Documents\NetBeansProjects\springapp\lib
+C:\Users\shadashiv\Documents\NetBeansProjects\springapp\db
+
+
+
+java -classpath C:\Users\shadashiv\Documents\NetBeansProjects\springapp\lib\hsqldb.jar org.hsqldb.Server -database test

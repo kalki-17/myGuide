@@ -1,0 +1,30 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+var a=10;
+var inner=50;
+//how you create a scope for this
+//in java it is curly braces { }
+
+function foo(){
+  
+//var inner =20;
+  console.log(c);
+  //c=19;
+}
+
+foo();
+
+
+
+
+/*
+Exception: ReferenceError: c is not defined
+foo@Scratchpad/2:17:3
+@Scratchpad/2:21:1
+*/
